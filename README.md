@@ -76,4 +76,11 @@ Here are the results of the different machine learning models used and the accur
 
 ## Summary
 ### Summary of the results
+Most of the sampling models except for random forest classifier show weak precision for high risk loans while strong precision for low risk loans. This means when the model predicts high and low risk loans it is more likely to be correct for low risk loans than high risk loans. For random forest classifier the precision for both high and low risk loans are high which means when the model predicts the loans it is highly likely to be correct. For all these models, the average precision becomes high due to the fact low risk loans are much more in number than high risk loans. 
+
+In terms of recall, all models except for ensemble learning models correctly identify the outcomes on average 50% of the time. The recall is high for the ensemble learners which means they were more likely to correctly identify the outcome. 
+
+All of the models bar the Easy Ensemble model had on average 60% accuracy scores.
+
 ### Which model should be used?
+The Easy Ensemble AdaBoost Classifier had a high precision of 99%, a high recall of 94% and an accuracy score of 93%. This model performed the best since it was accurate in predicting the correct outcome. This model should be used in further analysis. 
